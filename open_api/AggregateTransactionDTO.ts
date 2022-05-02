@@ -9,7 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { CosignatureDTO, NetworkTypeEnum } from '.';
+import { CosignatureDTO } from './CosignatureDTO';
+import { NetworkTypeEnum } from "./NetworkTypeEnum";
 /**
  * Transaction to combine multiple transactions together.
  * @export

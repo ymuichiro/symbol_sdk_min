@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { NetworkTypeEnum } from '.';
+import { NetworkTypeEnum } from './NetworkTypeEnum';
 /**
  *
  * @export

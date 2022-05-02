@@ -9,7 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { MosaicSupplyChangeActionEnum, NetworkTypeEnum } from '.';
+import { MosaicSupplyChangeActionEnum } from './MosaicSupplyChangeActionEnum';
+import { NetworkTypeEnum } from "./NetworkTypeEnum";
 /**
  *
  * @export

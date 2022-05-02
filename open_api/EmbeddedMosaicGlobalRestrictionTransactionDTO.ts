@@ -9,7 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { MosaicRestrictionTypeEnum, NetworkTypeEnum } from '.';
+import { MosaicRestrictionTypeEnum } from './MosaicRestrictionTypeEnum';
+import { NetworkTypeEnum } from "./NetworkTypeEnum";
 /**
  *
  * @export

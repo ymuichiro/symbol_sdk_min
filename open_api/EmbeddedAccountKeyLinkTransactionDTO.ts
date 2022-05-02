@@ -9,7 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { LinkActionEnum, NetworkTypeEnum } from '.';
+import { LinkActionEnum } from './LinkActionEnum';
+import { NetworkTypeEnum } from "./NetworkTypeEnum";
 /**
  *
  * @export

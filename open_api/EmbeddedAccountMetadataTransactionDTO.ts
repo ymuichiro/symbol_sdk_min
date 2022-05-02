@@ -9,35 +9,35 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { NetworkTypeEnum } from '.';
+import { NetworkTypeEnum } from './NetworkTypeEnum';
 /**
  *
  * @export
- * @interface EmbeddedMosaicMetadataTransactionDTO
+ * @interface EmbeddedAccountMetadataTransactionDTO
  */
-export interface EmbeddedMosaicMetadataTransactionDTO {
+export interface EmbeddedAccountMetadataTransactionDTO {
   /**
    * Public key.
    * @type {string}
-   * @memberof EmbeddedMosaicMetadataTransactionDTO
+   * @memberof EmbeddedAccountMetadataTransactionDTO
    */
   signerPublicKey: string;
   /**
    * Entity version.
    * @type {number}
-   * @memberof EmbeddedMosaicMetadataTransactionDTO
+   * @memberof EmbeddedAccountMetadataTransactionDTO
    */
   version: number;
   /**
    *
    * @type {NetworkTypeEnum}
-   * @memberof EmbeddedMosaicMetadataTransactionDTO
+   * @memberof EmbeddedAccountMetadataTransactionDTO
    */
   network: NetworkTypeEnum;
   /**
    *
    * @type {number}
-   * @memberof EmbeddedMosaicMetadataTransactionDTO
+   * @memberof EmbeddedAccountMetadataTransactionDTO
    */
   type: number;
   /**
@@ -45,41 +45,34 @@ export interface EmbeddedMosaicMetadataTransactionDTO {
    * regular address. Example: TAOXUJOTTW3W5XTBQMQEX3SQNA6MCUVGXLXR3TA.
    * Otherwise (e.g. 0x91) it represents a namespace id which starts at byte 1. Example: THBIMC3THGH5RUYAAAAAAAAAAAAAAAAAAAAAAAA
    * @type {string}
-   * @memberof EmbeddedMosaicMetadataTransactionDTO
+   * @memberof EmbeddedAccountMetadataTransactionDTO
    */
   targetAddress: string;
   /**
    * Metadata key scoped to source, target and type expressed.
    * @type {string}
-   * @memberof EmbeddedMosaicMetadataTransactionDTO
+   * @memberof EmbeddedAccountMetadataTransactionDTO
    */
   scopedMetadataKey: string;
   /**
-   * Mosaic identifier. If the most significant bit of byte 0 is set, a namespaceId (alias)
-   * is used instead of the real mosaic identifier.
-   * @type {string}
-   * @memberof EmbeddedMosaicMetadataTransactionDTO
-   */
-  targetMosaicId: string;
-  /**
    * Change in value size in bytes.
    * @type {number}
-   * @memberof EmbeddedMosaicMetadataTransactionDTO
+   * @memberof EmbeddedAccountMetadataTransactionDTO
    */
   valueSizeDelta: number;
   /**
    * A number that allows uint 32 values.
    * @type {number}
-   * @memberof EmbeddedMosaicMetadataTransactionDTO
+   * @memberof EmbeddedAccountMetadataTransactionDTO
    */
   valueSize: number;
   /**
    * Metadata value. If embedded in a transaction, this is calculated as xor(previous-value, value).
    * @type {string}
-   * @memberof EmbeddedMosaicMetadataTransactionDTO
+   * @memberof EmbeddedAccountMetadataTransactionDTO
    */
   value: string;
 }
-export declare function EmbeddedMosaicMetadataTransactionDTOFromJSON(json: any): EmbeddedMosaicMetadataTransactionDTO;
-export declare function EmbeddedMosaicMetadataTransactionDTOFromJSONTyped(json: any, ignoreDiscriminator: boolean): EmbeddedMosaicMetadataTransactionDTO;
-export declare function EmbeddedMosaicMetadataTransactionDTOToJSON(value?: EmbeddedMosaicMetadataTransactionDTO | null): any;
+export declare function EmbeddedAccountMetadataTransactionDTOFromJSON(json: any): EmbeddedAccountMetadataTransactionDTO;
+export declare function EmbeddedAccountMetadataTransactionDTOFromJSONTyped(json: any, ignoreDiscriminator: boolean): EmbeddedAccountMetadataTransactionDTO;
+export declare function EmbeddedAccountMetadataTransactionDTOToJSON(value?: EmbeddedAccountMetadataTransactionDTO | null): any;

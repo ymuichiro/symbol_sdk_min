@@ -9,7 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { AliasActionEnum, NetworkTypeEnum } from '.';
+import { AliasActionEnum } from './AliasActionEnum';
+import { NetworkTypeEnum } from "./NetworkTypeEnum";
 /**
  *
  * @export

@@ -9,12 +9,13 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { LockHashAlgorithmEnum, NetworkTypeEnum } from '.';
+import { LockHashAlgorithmEnum } from './LockHashAlgorithmEnum';
+import { NetworkTypeEnum } from "./NetworkTypeEnum";
 /**
- *
- * @export
- * @interface EmbeddedSecretProofTransactionDTO
- */
+*
+* @export
+* @interface EmbeddedSecretProofTransactionDTO
+*/
 export interface EmbeddedSecretProofTransactionDTO {
   /**
    * Public key.

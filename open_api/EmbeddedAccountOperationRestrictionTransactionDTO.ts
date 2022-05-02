@@ -9,7 +9,9 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { AccountRestrictionFlagsEnum, NetworkTypeEnum, TransactionTypeEnum } from '.';
+import { AccountRestrictionFlagsEnum } from './AccountRestrictionFlagsEnum';
+import { NetworkTypeEnum } from "./NetworkTypeEnum";
+import { TransactionTypeEnum } from "./TransactionTypeEnum";
 /**
  *
  * @export

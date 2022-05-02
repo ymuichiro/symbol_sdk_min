@@ -9,35 +9,35 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { NetworkTypeEnum } from '.';
+import { NetworkTypeEnum } from './NetworkTypeEnum';
 /**
  *
  * @export
- * @interface EmbeddedAccountMetadataTransactionDTO
+ * @interface EmbeddedNamespaceMetadataTransactionDTO
  */
-export interface EmbeddedAccountMetadataTransactionDTO {
+export interface EmbeddedNamespaceMetadataTransactionDTO {
   /**
    * Public key.
    * @type {string}
-   * @memberof EmbeddedAccountMetadataTransactionDTO
+   * @memberof EmbeddedNamespaceMetadataTransactionDTO
    */
   signerPublicKey: string;
   /**
    * Entity version.
    * @type {number}
-   * @memberof EmbeddedAccountMetadataTransactionDTO
+   * @memberof EmbeddedNamespaceMetadataTransactionDTO
    */
   version: number;
   /**
    *
    * @type {NetworkTypeEnum}
-   * @memberof EmbeddedAccountMetadataTransactionDTO
+   * @memberof EmbeddedNamespaceMetadataTransactionDTO
    */
   network: NetworkTypeEnum;
   /**
    *
    * @type {number}
-   * @memberof EmbeddedAccountMetadataTransactionDTO
+   * @memberof EmbeddedNamespaceMetadataTransactionDTO
    */
   type: number;
   /**
@@ -45,34 +45,40 @@ export interface EmbeddedAccountMetadataTransactionDTO {
    * regular address. Example: TAOXUJOTTW3W5XTBQMQEX3SQNA6MCUVGXLXR3TA.
    * Otherwise (e.g. 0x91) it represents a namespace id which starts at byte 1. Example: THBIMC3THGH5RUYAAAAAAAAAAAAAAAAAAAAAAAA
    * @type {string}
-   * @memberof EmbeddedAccountMetadataTransactionDTO
+   * @memberof EmbeddedNamespaceMetadataTransactionDTO
    */
   targetAddress: string;
   /**
    * Metadata key scoped to source, target and type expressed.
    * @type {string}
-   * @memberof EmbeddedAccountMetadataTransactionDTO
+   * @memberof EmbeddedNamespaceMetadataTransactionDTO
    */
   scopedMetadataKey: string;
   /**
+   * Namespace identifier.
+   * @type {string}
+   * @memberof EmbeddedNamespaceMetadataTransactionDTO
+   */
+  targetNamespaceId?: string;
+  /**
    * Change in value size in bytes.
    * @type {number}
-   * @memberof EmbeddedAccountMetadataTransactionDTO
+   * @memberof EmbeddedNamespaceMetadataTransactionDTO
    */
   valueSizeDelta: number;
   /**
    * A number that allows uint 32 values.
    * @type {number}
-   * @memberof EmbeddedAccountMetadataTransactionDTO
+   * @memberof EmbeddedNamespaceMetadataTransactionDTO
    */
   valueSize: number;
   /**
    * Metadata value. If embedded in a transaction, this is calculated as xor(previous-value, value).
    * @type {string}
-   * @memberof EmbeddedAccountMetadataTransactionDTO
+   * @memberof EmbeddedNamespaceMetadataTransactionDTO
    */
   value: string;
 }
-export declare function EmbeddedAccountMetadataTransactionDTOFromJSON(json: any): EmbeddedAccountMetadataTransactionDTO;
-export declare function EmbeddedAccountMetadataTransactionDTOFromJSONTyped(json: any, ignoreDiscriminator: boolean): EmbeddedAccountMetadataTransactionDTO;
-export declare function EmbeddedAccountMetadataTransactionDTOToJSON(value?: EmbeddedAccountMetadataTransactionDTO | null): any;
+export declare function EmbeddedNamespaceMetadataTransactionDTOFromJSON(json: any): EmbeddedNamespaceMetadataTransactionDTO;
+export declare function EmbeddedNamespaceMetadataTransactionDTOFromJSONTyped(json: any, ignoreDiscriminator: boolean): EmbeddedNamespaceMetadataTransactionDTO;
+export declare function EmbeddedNamespaceMetadataTransactionDTOToJSON(value?: EmbeddedNamespaceMetadataTransactionDTO | null): any;
