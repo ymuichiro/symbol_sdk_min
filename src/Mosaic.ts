@@ -1,8 +1,8 @@
 import { MosaicId } from "symbol-sdk/dist/src/model/mosaic/MosaicId";
 import { UInt64 } from "symbol-sdk/dist/src/model/UInt64";
-import { MosaicInfoDTO } from "../open_api/MosaicInfoDTO";
-import { MosaicPage } from "../open_api/MosaicPage";
-import { UrlControler } from "../util/helpers";
+import { MosaicInfoDTO } from "./open_api/MosaicInfoDTO";
+import { MosaicPage } from "./open_api/MosaicPage";
+import { UrlControler } from "./util/helpers";
 import BaseScripts from "./Base";
 
 const TIME_OUT = 60 * 1000;

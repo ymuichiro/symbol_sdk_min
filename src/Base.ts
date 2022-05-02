@@ -1,4 +1,4 @@
-import { NetworkError } from "../util/errors";
+import { NetworkError } from "./util/errors";
 
 interface RequestOptions {
   /** millisecond */

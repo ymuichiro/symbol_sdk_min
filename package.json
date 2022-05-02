@@ -2,8 +2,16 @@
   "name": "symbol_sdk_min",
   "version": "0.0.1",
   "author": "ym.u.ichiro@gmail.com",
+  "description": "ふぁー専用。Symbol-SDK",
   "license": "MIT",
   "private": false,
+  "homepage": "https://github.com/ymuichiro/symbol_sdk_min",
+  "repository": {
+    "url": "https://github.com/ymuichiro/symbol_sdk_min"
+  },
+  "bugs": {
+    "url": "https://github.com/ymuichiro/symbol_sdk_min/issues"
+  },
   "scripts": {
     "dev": "tsc"
   },

@@ -1,7 +1,7 @@
 import { AccountQR, AddressQR, MnemonicQR, QRCodeGenerator, QRCodeType, TransactionQR, ContactQR } from "symbol-qr-library/dist/index";
 import { Transaction, TransferTransaction } from "symbol-sdk/dist/src/model/transaction";
 import { NetworkType } from "symbol-sdk/dist/src/model/network/NetworkType";
-import { BaseQrValue, QrReadAddContact, QrReadTransferTransaction, TransferTransactionQRValues } from "../model/SymbolQr";
+import { BaseQrValue, QrReadAddContact, QrReadTransferTransaction, TransferTransactionQRValues } from "./model/SymbolQr";
 
 export default class SymbolQrScripts {
 

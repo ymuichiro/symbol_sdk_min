@@ -10,14 +10,14 @@ import { MessageFactory } from "symbol-sdk/dist/src/model/message/MessageFactory
 import { PublicAccount } from "symbol-sdk/dist/src/model/account/PublicAccount";
 import { Mosaic } from "symbol-sdk/dist/src/model/mosaic/Mosaic";
 import { NetworkType } from "symbol-sdk/dist/src/model/network/NetworkType";
-import { SearchTransactionsRequest, TransactionFeeConfig, TransactionGroup } from "../model/Transaction";
+import { SearchTransactionsRequest, TransactionFeeConfig, TransactionGroup } from "./model/Transaction";
 import { Message } from "symbol-sdk/dist/src/model/message/Message";
-import { InternalError } from "../util/errors";
-import { UrlControler } from "../util/helpers";
-import { TransactionFeesDTO } from "../open_api/TransactionFeesDTO";
-import { AnnounceTransactionInfoDTO } from "../open_api/AnnounceTransactionInfoDTO";
-import { TransactionInfoDTO } from "../open_api/TransactionInfoDTO";
-import { TransactionPage } from "../open_api/TransactionPage";
+import { InternalError } from "./util/errors";
+import { UrlControler } from "./util/helpers";
+import { TransactionFeesDTO } from "./open_api/TransactionFeesDTO";
+import { AnnounceTransactionInfoDTO } from "./open_api/AnnounceTransactionInfoDTO";
+import { TransactionInfoDTO } from "./open_api/TransactionInfoDTO";
+import { TransactionPage } from "./open_api/TransactionPage";
 import BaseScripts from "./Base";
 
 const TIME_OUT = 60 * 1000;

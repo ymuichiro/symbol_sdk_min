@@ -1,10 +1,10 @@
 import { NetworkType } from "symbol-sdk/dist/src/model/network/NetworkType";
-import { ResponseNetworkType } from "../model/Network";
-import { NetworkConfigurationDTO } from "../open_api/NetworkConfigurationDTO";
-import { NetworkTypeDTO } from "../open_api/NetworkTypeDTO";
-import { TransactionFeesDTO } from "../open_api/TransactionFeesDTO";
-import { InternalError } from "../util/errors";
-import { UrlControler } from "../util/helpers";
+import { ResponseNetworkType } from "./model/Network";
+import { NetworkConfigurationDTO } from "./open_api/NetworkConfigurationDTO";
+import { NetworkTypeDTO } from "./open_api/NetworkTypeDTO";
+import { TransactionFeesDTO } from "./open_api/TransactionFeesDTO";
+import { InternalError } from "./util/errors";
+import { UrlControler } from "./util/helpers";
 import BaseScripts from "./Base";
 
 const TIME_OUT = 60 * 1000;

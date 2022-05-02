@@ -1,6 +1,6 @@
 import { Address } from "symbol-sdk/dist/src/model/account/Address";
 import { NetworkType } from "symbol-sdk/dist/src/model/network/NetworkType";
-import { InternalError } from "../util/errors";
+import { InternalError } from "./util/errors";
 
 export default class AddressScripts {
 

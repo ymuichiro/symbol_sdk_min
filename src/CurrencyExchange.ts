@@ -1,4 +1,4 @@
-import { UrlControler } from "../util/helpers";
+import { UrlControler } from "./util/helpers";
 import BaseScripts from "./Base";
 
 interface CurrencyExchangeData {

@@ -1,10 +1,10 @@
 import BaseScripts from "./Base";
 import { NetworkType } from "symbol-sdk/dist/src/model/network/NetworkType";
-import { shuffle, UrlControler } from "../util/helpers";
-import { NodeInfo } from "../model/Node";
-import { NodeHealthDTO } from "../open_api/NodeHealthDTO";
-import { NodeInfoDTO } from "../open_api/NodeInfoDTO";
-import { NodeStatusEnum } from "../open_api/NodeStatusEnum";
+import { shuffle, UrlControler } from "./util/helpers";
+import { NodeInfo } from "./model/Node";
+import { NodeHealthDTO } from "./open_api/NodeHealthDTO";
+import { NodeInfoDTO } from "./open_api/NodeInfoDTO";
+import { NodeStatusEnum } from "./open_api/NodeStatusEnum";
 
 const TIME_OUT = 60 * 1000;
 

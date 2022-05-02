@@ -1,7 +1,7 @@
-import { BlockSearchCriteria } from "../model/Block";
-import { BlockInfoDTO } from "../open_api/BlockInfoDTO";
-import { BlockPage } from "../open_api/BlockPage";
-import { UrlControler } from "../util/helpers";
+import { BlockSearchCriteria } from "./model/Block";
+import { BlockInfoDTO } from "./open_api/BlockInfoDTO";
+import { BlockPage } from "./open_api/BlockPage";
+import { UrlControler } from "./util/helpers";
 import BaseScripts from "./Base";
 
 const TIME_OUT = 60 * 1000;

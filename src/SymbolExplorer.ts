@@ -1,5 +1,5 @@
 import { NetworkType } from "symbol-sdk/dist/src/model/network/NetworkType";
-import { UrlControler } from "../util/helpers";
+import { UrlControler } from "./util/helpers";
 import BaseScripts from "./Base";
 
 /**

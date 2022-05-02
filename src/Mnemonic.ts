@@ -1,6 +1,6 @@
 import { MnemonicPassPhrase } from "symbol-hd-wallets";
-import { MnemonicStructure } from "../model/Mnemonic";
-import { getUuid } from "../util/helpers";
+import { MnemonicStructure } from "./model/Mnemonic";
+import { getUuid } from "./util/helpers";
 
 export default class MnemonicScripts {
 

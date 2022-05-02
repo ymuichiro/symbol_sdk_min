@@ -1,11 +1,11 @@
 import { Address } from "symbol-sdk/dist/src/model/account/Address";
-import { SearchNamespacesRequest } from "../model/Namespace";
-import { AccountsNamesDTO } from "../open_api/AccountsNamesDTO";
-import { MosaicsNamesDTO } from "../open_api/MosaicsNamesDTO";
-import { NamespaceInfoDTO } from "../open_api/NamespaceInfoDTO";
-import { NamespaceNameDTO } from "../open_api/NamespaceNameDTO";
-import { NamespacePage } from "../open_api/NamespacePage";
-import { UrlControler } from "../util/helpers";
+import { SearchNamespacesRequest } from "./model/Namespace";
+import { AccountsNamesDTO } from "./open_api/AccountsNamesDTO";
+import { MosaicsNamesDTO } from "./open_api/MosaicsNamesDTO";
+import { NamespaceInfoDTO } from "./open_api/NamespaceInfoDTO";
+import { NamespaceNameDTO } from "./open_api/NamespaceNameDTO";
+import { NamespacePage } from "./open_api/NamespacePage";
+import { UrlControler } from "./util/helpers";
 import BaseScripts from "./Base";
 
 const TIME_OUT = 60 * 1000;

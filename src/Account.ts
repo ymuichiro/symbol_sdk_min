@@ -3,9 +3,9 @@ import { Address } from "symbol-sdk/dist/src/model/account/Address";
 import { NetworkType } from "symbol-sdk/dist/src/model/network/NetworkType";
 import { ExtendedKey, MnemonicPassPhrase, Network, Wallet } from "symbol-hd-wallets";
 import BaseScripts from "./Base";
-import { UrlControler } from "../util/helpers";
-import { InternalError } from "../util/errors";
-import { AccountInfoDTO } from "../open_api/AccountInfoDTO";
+import { UrlControler } from "./util/helpers";
+import { InternalError } from "./util/errors";
+import { AccountInfoDTO } from "./open_api/AccountInfoDTO";
 
 export default class AccountScripts extends BaseScripts {
   static NETWORK = Network.SYMBOL;
