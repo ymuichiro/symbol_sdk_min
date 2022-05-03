@@ -1,6 +1,6 @@
 {
   "name": "symbol_sdk_min",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "ym.u.ichiro@gmail.com",
   "description": "ふぁー専用。Symbol-SDK",
   "license": "MIT",
@@ -13,7 +13,8 @@
     "url": "https://github.com/ymuichiro/symbol_sdk_min/issues"
   },
   "scripts": {
-    "dev": "tsc"
+    "dev": "tsc",
+    "publish": "npm publish"
   },
   "dependencies": {
     "symbol-hd-wallets": "0.14.2",
