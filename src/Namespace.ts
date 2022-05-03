@@ -6,11 +6,11 @@ import { NamespaceInfoDTO } from "./open_api/NamespaceInfoDTO";
 import { NamespaceNameDTO } from "./open_api/NamespaceNameDTO";
 import { NamespacePage } from "./open_api/NamespacePage";
 import { UrlControler } from "./util/helpers";
-import BaseScripts from "./Base";
+import { BaseScripts } from "./Base";
 
 const TIME_OUT = 60 * 1000;
 
-export default class NamespaceScripts extends BaseScripts {
+export class NamespaceScripts extends BaseScripts {
 
   /** Search namespaces */
   static async search(uri: string, criteria: SearchNamespacesRequest): Promise<NamespacePage> {

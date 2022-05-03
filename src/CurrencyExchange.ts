@@ -1,5 +1,5 @@
 import { UrlControler } from "./util/helpers";
-import BaseScripts from "./Base";
+import { BaseScripts } from "./Base";
 
 interface CurrencyExchangeData {
   price: number | null;
@@ -7,7 +7,7 @@ interface CurrencyExchangeData {
 
 const TIME_OUT = 60 * 1000;
 
-export default class CurrencyExchangeScripts extends BaseScripts {
+export class CurrencyExchangeScripts extends BaseScripts {
   static apiServiceName: string = "CoinGecko";
   static baseUri: string = "https://api.coingecko.com/api/v3";
 

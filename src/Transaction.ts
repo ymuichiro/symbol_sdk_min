@@ -18,11 +18,11 @@ import { TransactionFeesDTO } from "./open_api/TransactionFeesDTO";
 import { AnnounceTransactionInfoDTO } from "./open_api/AnnounceTransactionInfoDTO";
 import { TransactionInfoDTO } from "./open_api/TransactionInfoDTO";
 import { TransactionPage } from "./open_api/TransactionPage";
-import BaseScripts from "./Base";
+import { BaseScripts } from "./Base";
 
 const TIME_OUT = 60 * 1000;
 
-export default class TransactionScripts extends BaseScripts {
+export class TransactionScripts extends BaseScripts {
 
   /** calculate max fee */
   static calculateFees(message: string, mosaics: Mosaic[], currentNetworkFee: number, epochAdjustment: number, type: NetworkType): number {

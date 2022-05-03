@@ -2,7 +2,7 @@ import { MnemonicPassPhrase } from "symbol-hd-wallets";
 import { MnemonicStructure } from "./model/Mnemonic";
 import { getUuid } from "./util/helpers";
 
-export default class MnemonicScripts {
+export class MnemonicScripts {
 
   /** generate mnemonic */
   static generate(): MnemonicStructure {

@@ -1,4 +1,4 @@
-import BaseScripts from "./Base";
+import { BaseScripts } from "./Base";
 import { NetworkType } from "symbol-sdk/dist/src/model/network/NetworkType";
 import { shuffle, UrlControler } from "./util/helpers";
 import { NodeInfo } from "./model/Node";
@@ -8,7 +8,7 @@ import { NodeStatusEnum } from "./open_api/NodeStatusEnum";
 
 const TIME_OUT = 60 * 1000;
 
-export default class NodeScripts extends BaseScripts {
+export class NodeScripts extends BaseScripts {
 
   /** get node health from uri */
   static async getNodeHealth(uri: string): Promise<NodeHealthDTO> {

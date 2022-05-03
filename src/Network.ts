@@ -5,11 +5,11 @@ import { NetworkTypeDTO } from "./open_api/NetworkTypeDTO";
 import { TransactionFeesDTO } from "./open_api/TransactionFeesDTO";
 import { InternalError } from "./util/errors";
 import { UrlControler } from "./util/helpers";
-import BaseScripts from "./Base";
+import { BaseScripts } from "./Base";
 
 const TIME_OUT = 60 * 1000;
 
-export default class NetworkScripts extends BaseScripts {
+export class NetworkScripts extends BaseScripts {
 
   /** get current network type */
   static async getCurrentType(uri: string): Promise<ResponseNetworkType> {

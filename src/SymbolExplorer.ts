@@ -1,6 +1,6 @@
 import { NetworkType } from "symbol-sdk/dist/src/model/network/NetworkType";
 import { UrlControler } from "./util/helpers";
-import BaseScripts from "./Base";
+import { BaseScripts } from "./Base";
 
 /**
  * URL Generator for Symbol Explorer

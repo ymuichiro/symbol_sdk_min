@@ -3,7 +3,7 @@ import { Transaction, TransferTransaction } from "symbol-sdk/dist/src/model/tran
 import { NetworkType } from "symbol-sdk/dist/src/model/network/NetworkType";
 import { BaseQrValue, QrReadAddContact, QrReadTransferTransaction, TransferTransactionQRValues } from "./model/SymbolQr";
 
-export default class SymbolQrScripts {
+export class SymbolQrScripts {
 
   /** Generate AddressQR from address */
   static getAddressQr(name: string, address: string, type: NetworkType, generationHash: string): AddressQR {

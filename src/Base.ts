@@ -5,7 +5,7 @@ interface RequestOptions {
   timeout?: number;
 }
 
-export default class BaseScripts {
+export class BaseScripts {
 
   /** 指定されたURLにFetchを実行する */
   static async request<T>(url: RequestInfo, init?: RequestInit, options?: RequestOptions): Promise<T> {
