@@ -1,4 +1,4 @@
-import { NetworkType } from "symbol-sdk/dist/src/model/network/NetworkType";
+import { NodeInfoDTO } from "../open_api/NodeInfoDTO";
 
 /**
  * role of node.
@@ -24,7 +24,7 @@ export enum NodeRole {
   "IPv6CompatibleAndPeerAndApiAndVotingNode" = 135,
 }
 
-export interface NodeInfo {
-  url: string;
-  type: NetworkType;
+/** node information */
+export interface NodeInfo extends NodeInfoDTO {
+  nodeUrl: string;
 }

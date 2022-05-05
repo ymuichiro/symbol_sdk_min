@@ -39,8 +39,11 @@ export class NodeScripts extends BaseScripts {
     await Promise.all(
       shuffle(n).map(async (url) => {
         try {
-          this.isLive(url).then(e => e ? lists.push({ type, url }) : null);
-        } catch (e) { }
+          if (await this.isLive(url)) {
+            const nodeInfo = await this.getNodeInfo(url);
+            lists.push({ ...nodeInfo, nodeUrl: url });
+          }
+        } catch (_) { }
       })
     );
     return lists;
@@ -54,11 +57,17 @@ export class NodeScripts extends BaseScripts {
     await Promise.all(response.map(async (r) => {
       try {
         const url = `https://${r.host}`;
-        if (await this.isLive(url)) return ln.push({ type: r.networkIdentifier, url });
+        if (await this.isLive(url)) {
+          const info = await this.getNodeInfo(url);
+          return ln.push({ ...info, nodeUrl: url });
+        };
       } catch (_) { }
       try {
         const url = `http://${r.host}`;
-        if (await this.isLive(url)) return ln.push({ type: r.networkIdentifier, url });
+        if (await this.isLive(url)) {
+          const info = await this.getNodeInfo(url);
+          return ln.push({ ...info, nodeUrl: url });
+        }
       } catch (_) { }
     }));
     return ln;

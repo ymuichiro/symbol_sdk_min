@@ -15,6 +15,7 @@ export interface ResponseNetworkType {
   description: string;
 }
 
+
 export {
   NetworkType,
 };
