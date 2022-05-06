@@ -4,8 +4,13 @@ import { MosaicInfoDTO } from "./open_api/MosaicInfoDTO";
 import { MosaicPage } from "./open_api/MosaicPage";
 import { UrlControler } from "./util/helpers";
 import { BaseScripts } from "./Base";
+import { Mosaic } from "symbol-sdk/dist/src/model/mosaic/Mosaic";
 
 const TIME_OUT = 60 * 1000;
+
+export {
+  Mosaic, UInt64, MosaicId
+};
 
 export class MosaicScripts extends BaseScripts {
 

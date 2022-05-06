@@ -2,6 +2,10 @@ import { Address } from "symbol-sdk/dist/src/model/account/Address";
 import { NetworkType } from "symbol-sdk/dist/src/model/network/NetworkType";
 import { InternalError } from "./util/errors";
 
+export {
+  Address
+};
+
 export class AddressScripts {
 
   static isRawAddress(address: string): boolean {

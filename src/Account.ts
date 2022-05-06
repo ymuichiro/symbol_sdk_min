@@ -7,6 +7,10 @@ import { UrlControler } from "./util/helpers";
 import { InternalError } from "./util/errors";
 import { AccountInfoDTO } from "./open_api/AccountInfoDTO";
 
+export {
+  Account,
+};
+
 export class AccountScripts extends BaseScripts {
   static NETWORK = Network.SYMBOL;
   static TIMEOUT = 60 * 1000;
