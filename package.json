@@ -1,6 +1,6 @@
 {
   "name": "symbol_sdk_min",
-  "version": "0.0.43",
+  "version": "0.0.44",
   "author": "ym.u.ichiro@gmail.com",
   "description": "ふぁー専用。Symbol-SDK",
   "main": "./dist/index.js",
