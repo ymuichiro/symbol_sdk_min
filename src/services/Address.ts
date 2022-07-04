@@ -1,20 +1,17 @@
-import { Address } from "symbol-sdk/dist/src/model/account/Address";
-import { NetworkType } from "symbol-sdk/dist/src/model/network/NetworkType";
-import { InternalError } from "./util/errors";
+import { Address } from 'symbol-sdk/dist/src/model/account/Address';
+import { NetworkType } from 'symbol-sdk/dist/src/model/network/NetworkType';
+import { InternalError } from '../util/errors';
 
-export {
-  Address
-};
+export { Address };
 
 export class AddressScripts {
-
   static isRawAddress(address: string): boolean {
     return Address.isValidRawAddress(address);
   }
 
   /** RawAddress or EncodedAddressを Address に揃えて出力する */
   static createFromAddress(address: string): Address {
-    const formatAddress = address.replace(/\-/g, "");
+    const formatAddress = address.replace(/\-/g, '');
     if (Address.isValidRawAddress(formatAddress)) {
       return Address.createFromRawAddress(formatAddress);
     } else if (Address.isValidEncodedAddress(formatAddress)) {

@@ -3,6 +3,7 @@
   "version": "0.0.43",
   "author": "ym.u.ichiro@gmail.com",
   "description": "ふぁー専用。Symbol-SDK",
+  "main": "./dist/index.js",
   "license": "MIT",
   "private": false,
   "homepage": "https://github.com/ymuichiro/symbol_sdk_min",
