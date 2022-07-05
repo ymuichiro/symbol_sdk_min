@@ -18,12 +18,12 @@ export class BaseScripts {
     const controler = new AbortController();
     const t = options ? (options.timeout ? options.timeout : 60 * 1000) : 60 * 1000;
     const timeout = setTimeout(() => controler.abort(), t);
-    const headers = new Headers();
-    headers.append('Content-Type', 'application/json');
     try {
       const response = await fetch(url, {
         ...init,
-        headers,
+        headers: {
+          'Content-Type': 'application/json',
+        },
         signal: controler.signal,
       });
       const data = await response.json();
